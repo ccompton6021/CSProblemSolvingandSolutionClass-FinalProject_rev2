@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=69.0.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "CS Problem Solving and Solution Class - Final Project"
+version = "0.0.1"
+authors = [
+{ name="Cole Compton, Sebastian LastNameGoesHere, LastGroupMembersNameGoesHere",
+email="ccompton6021@floridapoly.edu", GroupMembersEmailGoesHere, GroupMembersEmailGoesHere },
+]
+description = "Final Project for college python course."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+"Programming Language :: Python :: 3",
+"License :: OSI Approved :: MIT License",
+"Operating System :: OS Independent",
+]
+[project.urls]
+Homepage = "https://github.com/ccompton6021/CSProblemSolvingandSolutionClass-FinalProject_rev2"
+Issues = "https://github.com/ccompton6021/CSProblemSolvingandSolutionClass-FinalProject_rev2/issues"
