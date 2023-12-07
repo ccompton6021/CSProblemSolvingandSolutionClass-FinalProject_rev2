@@ -6,8 +6,10 @@ build-backend = "setuptools.build_meta"
 name = "CS Problem Solving and Solution Class - Final Project"
 version = "0.0.1"
 authors = [
-{ name="Cole Compton, Sebastian LastNameGoesHere, LastGroupMembersNameGoesHere",
-email="ccompton6021@floridapoly.edu", GroupMembersEmailGoesHere, GroupMembersEmailGoesHere },
+{ 
+name="Cole Compton, Sebastian Aguilar, Joseph Companion",
+email="ccompton6021@floridapoly.edu", amsebastian12@gmail.com, jcompanion4914@floridapoly.edu
+},
 ]
 description = "Final Project for college python course."
 readme = "README.md"
