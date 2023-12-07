@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import numpy as np
 from scipy.signal import spectrogram, find_peaks
+from project_model import Model
 
 def calculate_rt60(spectrogram_data, decay_threshold=-60):
     """
