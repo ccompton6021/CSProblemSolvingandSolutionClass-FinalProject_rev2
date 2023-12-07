@@ -1,0 +1,16 @@
+Cole Compton, Sun Dec 3 18:15:02 2023 -0500, Started the project and created the first commit for the main bcanch.
+Cole Compton, Sun Dec 3 18:17:00 2023 -0500, Created the test branch and created its first commit.
+Cole Compton, Sun Dec 3 18:55:35 2023 -0500, Added the repository to github and made changes to the repository so that git commits should show my Github account email and my name.
+
+CCheb, Sun Dec 3 19:39:49 2023 -0500, Updated the final_project_practice-1.py file - Commented out many of the graphing parts and left the graphing to be done in the end once the data has been cleaned and parsed.
+CCheb, Sun Dec 3 20:22:08 2023 -0500, First pull request from ccompton6021/test_2 - Update to the final_project_practice-1.py file.
+
+Cole Compton, Mon Dec 4 11:41:39 2023 -0500, modified the README.md file and added the LICENSE and pyproject.toml files.
+Cole Compton, Mon Dec 4 11:45:17 2023 -0500, Edited the README.md file to include a title.
+Cole Compton, Tue Dec 5 17:43:09 2023 -0500, Finished creating v1 of the LICENSE and pyproject.toml files
+
+CCheb, Wed Dec 6 20:03:35 2023 -0500, First Commit - Wrote python functions to clean and convert the audio file, along with a function to create a spectrogram.
+CCheb, Thu Dec 7 12:16:43 2023 -0500, Second Commit - Added more to the original cleaning_modeling.py file.
+
+Cole Compton, Thu Dec 7 13:16:31 2023 -0500, Added the audio file to the main branch of the repository.
+Cole Compton, , Uploaded v1 of the changelog.txt file.
