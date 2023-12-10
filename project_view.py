@@ -43,6 +43,10 @@ class View:
         # Load button
         self.load_button = tk.Button(root, text="Load file", command=self.load_file)
         self.load_button.pack()
+        
+        # Analyze button
+        self.analyze_button = tk.Button(root, text="Analyze", command=self.analyze_audio)
+        self.analyze_button.pack()
 
         # Display file name
         self.file_label = tk.Label(root, text="")
@@ -56,10 +60,9 @@ class View:
         self.figure, self.ax = plt.subplots(figsize=(8, 6))
         self.canvas = FigureCanvasTkAgg(self.figure, master=root)
         self.canvas.get_tk_widget().pack()
+        plt.gcf().subplots_adjust(bottom=.15)
 
-        # Analyze button
-        self.analyze_button = tk.Button(root, text="Analyze", command=self.analyze_audio)
-        self.analyze_button.pack()
+       
 
     def load_file(self, model):
         file_path = filedialog.askopenfilename(filetypes=[("Audio files", "*.wav; *.mp3; *.aac; .m4a")])
