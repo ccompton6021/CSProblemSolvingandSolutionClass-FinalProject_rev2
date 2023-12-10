@@ -63,7 +63,7 @@ class View:
         self.analyze_button.pack()
 
     def load_file(self, model):
-        file_path = filedialog.askopenfilename(filetypes=[("Audio files", "*.wav;*.mp3;*.aac")])
+        file_path = filedialog.askopenfilename(filetypes=[("Audio files", ".wav"),("Audio files",".mp3"),("Audio files",".aac")])
         if file_path:
             model.load_file(file_path)
             self.file_label.config(text=f"File: {model.filename}")
