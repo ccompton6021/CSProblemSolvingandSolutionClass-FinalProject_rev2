@@ -47,6 +47,6 @@ Cole Compton, Sun Dec 10 16:07:12 2023 -0500, Merge pull request #3 from d1am0nd
 Cole Compton, Sun Dec 10 16:35:17 2023 -0500, The program is now able to import the m4a audio file.
 Cole Compton, Sun Dec 10 16:35:57 2023 -0500, The program is now able to import the m4a audio file.
 Cole Compton, Sun Dec 10 16:38:09 2023 -0500, I think the program now works.
-Cole Compton, Sun Dec 10 16:51:22 2023 -0500, Finished v2 of changelog.txt.
+Cole Compton, Sun Dec 10 16:51:22 2023 -0500, Finished v2 of the changelog.txt file.
 Cole Compton, Sun Dec 10 16:53:52 2023 -0500, Finished v2 of the README.md file
 
