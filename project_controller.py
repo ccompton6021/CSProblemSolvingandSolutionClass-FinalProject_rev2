@@ -16,7 +16,7 @@ class Controller:
         self.view.root.mainloop()
 
     def load_file(self):
-        file_path = self.view.ask_open_filename(filetypes=[("Audio files", "*.wav;*.mp3;*.aac")])
+        file_path = self.view.load_file()
         if file_path:
             self.model.load_file(file_path)
             self.view.file_label.config(text=f"File: {self.model.filename}")

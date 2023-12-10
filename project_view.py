@@ -45,7 +45,7 @@ class View:
         # Display time value
         self.time_label = tk.Label(root, text="")
         self.time_label.pack()
-
+        
         # Plot canvas
         self.figure, self.ax = plt.subplots(figsize=(8, 6))
         self.canvas = FigureCanvasTkAgg(self.figure, master=root)
@@ -55,8 +55,9 @@ class View:
         self.analyze_button = tk.Button(root, text="Analyze", command=self.analyze_audio)
         self.analyze_button.pack()
 
+    
     def load_file(self):
-        file_path = filedialog.askopenfilename(filetypes=[("Audio files", "*.wav;*.mp3;*.aac")])
+        file_path = tk.filedialog.askopenfilename(filetypes=[("Audio files", "*.wav;*.mp3;*.aac")])
         if file_path:
             model.load_file(file_path)
             self.file_label.config(text=f"File: {model.filename}")
