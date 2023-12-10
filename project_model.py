@@ -15,8 +15,8 @@ class Model:
     def load_file(self, file_path):
         # Load audio file
         self.filename = file_path
-        if file_path.lower().endswith(('.wav', '.mp3', '.aac','.m4a')):
-            if file_path.lower().endswith(('.mp3', '.aac','.m4a')):
+        if file_path.lower().suffix(('.wav', '.mp3', '.aac','.m4a')):
+            if file_path.lower().suffix(('.mp3', '.aac','.m4a')):
                 # convert files to .wav
                 self.convert_to_wav(file_path)
 

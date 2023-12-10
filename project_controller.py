@@ -1,6 +1,6 @@
 # import statements
-from project_model import Model
 from project_view import View
+from project_model import Model
 from tkinter import filedialog
 
 # controller class
@@ -17,7 +17,7 @@ class Controller:
         self.view.root.mainloop()
 
     def load_file(self):
-        file_path = filedialog.askopenfilename(filetypes=[("Audio files", "*.wav;*.mp3;*.aac;*.m4a")])
+        file_path = filedialog.askopenfilename(filetypes=[("Audio files", "*.wav; *.mp3; *.aac; *.m4a")])
         if file_path:
             self.model.load_file(file_path)
             self.view.file_label.config(text=f"File: {self.model.filename}")

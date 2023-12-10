@@ -5,7 +5,6 @@ import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import numpy as np
 from scipy.signal import spectrogram, find_peaks
-from project_model import Model
 
 def calculate_rt60(model, spectrogram_data, decay_percentage=60):
     """
@@ -63,7 +62,7 @@ class View:
         self.analyze_button.pack()
 
     def load_file(self, model):
-        file_path = filedialog.askopenfilename(filetypes=[("Audio files", ".wav"),("Audio files",".mp3"),("Audio files",".aac")])
+        file_path = filedialog.askopenfilename(filetypes=[("Audio files", "*.wav; *.mp3; *.aac; .m4a")])
         if file_path:
             model.load_file(file_path)
             self.file_label.config(text=f"File: {model.filename}")
