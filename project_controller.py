@@ -1,6 +1,7 @@
 # import statements
 from project_model import Model
 from project_view import View
+from tkinter import filedialog
 
 # controller class
 class Controller:
@@ -16,11 +17,11 @@ class Controller:
         self.view.root.mainloop()
 
     def load_file(self):
-        file_path = self.view.load_file()
+        file_path = filedialog.askopenfilename(filetypes=[("Audio files", "*.wav;*.mp3;*.aac;*.m4a")])
         if file_path:
             self.model.load_file(file_path)
             self.view.file_label.config(text=f"File: {self.model.filename}")
-            self.view.plot_waveform()
+            self.view.plot_waveform(self.model)
 
     def analyze_audio(self):
-        self.view.analyze_audio()
+        self.view.analyze_audio(self.model)
