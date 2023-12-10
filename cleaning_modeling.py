@@ -233,7 +233,8 @@ def graph_frequencies(frequency_data_collection, key, time):
 def main():
     # Assuming we already have user input
     # Obtaining the file name with and without extension (file_name and full_file_name)
-    audio_file_path = Path(r'C:\Users\amseb_7f4cpmk\Documents\Python_Files\COP2080\final_project\16bit1chan.wav')
+    #audio_file_path = Path(r'C:\Users\amseb_7f4cpmk\Documents\Python_Files\COP2080\final_project\16bit1chan.wav')
+    audio_file_path = Path(r'Audio_Clap_AulaMagna.m4a')
     file_name = audio_file_path.stem
     full_file_name = audio_file_path.name
 

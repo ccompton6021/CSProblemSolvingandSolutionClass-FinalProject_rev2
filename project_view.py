@@ -57,7 +57,7 @@ class View:
 
     
     def load_file(self):
-        file_path = tk.filedialog.askopenfilename(filetypes=[("Audio files", "*.wav;*.mp3;*.aac")])
+        file_path = tk.filedialog.askopenfilename(filetypes=[("Audio files", "*.wav;*.mp3;*.aac;")])
         if file_path:
             model.load_file(file_path)
             self.file_label.config(text=f"File: {model.filename}")
