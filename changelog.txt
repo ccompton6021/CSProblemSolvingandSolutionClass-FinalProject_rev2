@@ -27,5 +27,23 @@ Cole Compton, Thu Dec 7 13:39:20 2023 -0500, Uploaded v1 of the changelog.txt fi
 Joseph Companion, Thu Dec 7 13:23:39 2023 -0500, Merged the branch 'ccompton6021:main' into main.
 Joseph Companion, Thu Dec 7 13:31:53 2023 -0500, Uploaded files and commits to the Github repository.
 
-Cole Compton, Thu Dec 7 13:41:46 2023 -0500, Merge pull request #2 from d1am0ndb4ck375/main branch.
-Cole Compton, , Uploaded v2 of the changelog.txt file.
+Cole Compton, Thu Dec 7 13:41:46 2023 -0500, Merge pull request #2 from d1am0ndb4ck375/main branch - Added new files.
+Cole Compton, Thu Dec 7 13:54:48 2023 -0500, Uploaded v2 of the changelog.txt file.
+
+CCheb, Sat Dec 9 12:12:16 2023 -0500, Third Commit - Completely revamped the code to look more pythonic.
+
+Cole Compton, Sun Dec 10 13:34:11 2023 -0500, Merge branch 'dev_from_seb' into test.
+Cole Compton, Sun Dec 10 13:52:04 2023 -0500, Adding the __pycache__ folder.
+Cole Compton, Sun Dec 10 14:13:16 2023 -0500, Fixed issue where load file button would not work as intended.
+Cole Compton, Sun Dec 10 15:14:09 2023 -0500, Made edits to claning_modeling.py.
+
+Joseph Companion, Sun Dec 10 16:00:01 2023 -0500, Cole ComptonUpdate to project_view.py.
+Joseph Companion, Sun Dec 10 16:02:41 2023 -0500, Cole ComptonUpdate project_model.py.
+Joseph Companion, Sun Dec 10 16:04:08 2023 -0500, Cole ComptonUpdate project_controller.py.
+
+Cole Compton, Sun Dec 10 16:06:48 2023 -0500, Merge pull request #5 from d1am0ndb4ck375/patch-3 branch - Update to the project_controller.py file.
+Cole Compton, Sun Dec 10 16:07:00 2023 -0500, Merge pull request #4 from d1am0ndb4ck375/patch-2 branch - Update to the project_model.py file.
+Cole Compton, Sun Dec 10 16:07:12 2023 -0500, Merge pull request #3 from d1am0ndb4ck375/patch-1 branch - Update to the project_view.py file.
+Cole Compton, Sun Dec 10 16:35:17 2023 -0500, The program is now able to import the m4a audio file.
+Cole Compton, Sun Dec 10 16:35:57 2023 -0500, The program is now able to import the m4a audio file.
+Cole Compton, Sun Dec 10 16:38:09 2023 -0500, I think the program now works.
