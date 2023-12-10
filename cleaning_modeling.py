@@ -19,15 +19,13 @@ def convert_audio_to_wav(audio_file_path, file_name):
         if file_extension == '.m4a':
             audio_file = AudioSegment.from_file(audio_file_path, format='mp4')
             audio_file.export(f'{file_name}_uncleaned.wav', format='wav')
-            wav_audio_file = AudioSegment(f'{file_name}_uncleaned.wav', format='wav')
-        else:
-            audio_file = AudioSegment.from_file(audio_file_path, format=file_extension)
+        elif file_extension == '.mp3':
+            audio_file = AudioSegment.from_mp3(audio_file_path)
             audio_file.export(f'{file_name}_uncleaned.wav', format='wav')
-            wav_audio_file = AudioSegment(f'{file_name}_uncleaned.wav', format='wav')
-        return wav_audio_file
-    else:
-        wav_audio_file = AudioSegment.from_file(audio_file_path, format='wav')
-        return wav_audio_file
+        else:
+            audio_file = AudioSegment.from_ogg(audio_file_path)
+            audio_file.export(f'{file_name}_uncleaned.wav', format='wav')
+        return
 
 # Cleaning function only checks to see if there are 2 or more channels and adjusts the .wav accordingly
 # we created a new audio file if the original had 2 or more channels with the added '_mono.wav'
@@ -167,20 +165,6 @@ def find_rt60(frequency_data_collection, key, time):
     rt_60 = 3 * rt_20
     return rt_60
 
-### RT60 OF LOW ###
-# rt20 is the reverberation time (time it takes for sound to die down)
-# between the -5dB and -25dB
-# rt20_low = (t[index_less5_low] - t[index_less25_low])[0]
-# rt60_low = 3 * rt20_low
-
-### RT60 OF MID ###
-# rt20_mid = (t[index_less5_mid] - t[index_less25_mid])[0]
-# rt60_mid = 3 * rt20_mid
-
-### RT60 OF HIGH ###
-# rt20_high = (t[index_less5_high] - t[index_less25_high])[0]
-# rt60_high = 3 * rt20_high
-
 
 # Graphing function that takes each of the frequencies and plots their wave form
 # along with the max, -5, and -25 dB values
@@ -233,13 +217,20 @@ def graph_frequencies(frequency_data_collection, key, time):
 def main():
     # Assuming we already have user input
     # Obtaining the file name with and without extension (file_name and full_file_name)
-    audio_file_path = Path(r'C:\Users\amseb_7f4cpmk\Documents\Python_Files\COP2080\final_project\16bit1chan.wav')
+    audio_file_path = Path(r'C:\Users\amseb_7f4cpmk\Documents\Python_Files\COP2080\final_project\16bit1chan.mp3')
     file_name = audio_file_path.stem
     full_file_name = audio_file_path.name
 
     # Calling the convert audio function to check if the audio file is in .wav
     # The function creates a new audio file if not in .wav
-    wav_file = convert_audio_to_wav(audio_file_path, file_name)
+    convert_audio_to_wav(audio_file_path, file_name)
+
+    if audio_file_path.suffix == '.wav':
+        wav_file = AudioSegment.from_file(audio_file_path, format='wav')
+    else:
+        wav_file = AudioSegment.from_file(f'{file_name}_uncleaned.wav', format='wav')
+        audio_file_path = audio_file_path.parent / f'{file_name}_uncleaned.wav'
+        full_file_name = audio_file_path.name
 
     # Grabbing the cleaned wav file along with its name so that they can be used to create a
     # spectrogram
